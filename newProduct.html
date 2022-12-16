@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style2.css"">
+    <link rel=" preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@500&display=swap" rel="stylesheet">
+    <style>
+        .showcase video {
+            opacity: 0.3;
+        }
+
+        #productUL {
+            z-index: 14;
+        }
+
+        li a:hover {
+            border-bottom: 3px solid #fff;
+        }
+
+        .img-Hover {
+            transition: transform 0.5s ease;
+        }
+
+        .img-Hover:hover {
+            transform: scale(1.1);
+        }
+
+        section ul li h3 {
+            text-align: center;
+            padding-top: 10px;
+            padding-bottom: 20px;
+        }
+
+        section ul li p {
+            text-align: center;
+            padding-bottom: 20px;
+        }
+
+        section ul li button {
+            text-align: center;
+        }
+    </style>
+    <title>Watches and Wonders</title>
+</head>
+
+<body>
+    <section class=" showcase active">
+        <header>
+            <h2 class="logo">Watches and Wonders</h2>
+            <div class="toggle active"></div>
+        </header>
+        <video src="video/ Movie.mp4" muted loop autoplay></video>
+
+        <ul id="productUL">
+            <li>
+                <img src="https://cdn.shopify.com/s/files/1/0458/4492/2517/products/omega-seamaster-diver-300m-21030422003001-l_800x.png?v=1601127029"
+                    class="img-Hover">
+                <h3>Omega</h3>
+                <p>$4.999 CAD</p>
+                <button>Add to Cart</button>
+            </li>
+            <li>
+                <img src="img/Rolex.png" class="img-Hover" alt="Rolex 2">
+                <h3>Rolex</h3>
+                <p>$20.000 CAD</p>
+                <button>Add to Cart</button>
+            </li>
+            <li>
+                <img src="img/Patek.png" class="img-Hover" alt="Patek Philipe 3">
+                <h3>Patek Philipe</h3>
+                <p>$150.000 CAD</p>
+                <button>Add to Cart</button>
+            </li>
+            <li>
+                <img src="img/AP.png" class="img-Hover" alt="AP">
+                <h3>Audemars Piguet</h3>
+                <p>$60.000 CAD</p>
+                <button>Add to Cart</button>
+            </li>
+            <li>
+                <img src="img/Vacheron.png" class="img-Hover" alt="Vacheron Constantin">
+                <h3>Vacheron Constantin</h3>
+                <p>$55.000 CAD</p>
+                <button>Add to Cart</button>
+            </li>
+            <li>
+                <img src="img/JLC.png" class="img-Hover" alt="Jaeger-LeCoultre">
+                <h3>Jaeger-LeCoultre</h3>
+                <p>$9.999 CAD</p>
+                <button>Add to Cart</button>
+            </li>
+            <li>
+                <img src="img/Bretling.png" class="img-Hover" alt="Bretling">
+                <h3>Bretling</h3>
+                <p>$12.700 CAD</p>
+                <button>Add to Cart</button>
+            </li>
+            <li>
+                <img src="img/grandSeiko.webp" class="img-Hover" alt="Grand Seiko">
+                <h3>Grand Seiko</h3>
+                <p>$5.999 CAD</p>
+                <button>Add to Cart</button>
+            </li>
+            <li>
+                <img src="img/Zenith.png" class="img-Hover" alt="Zenith">
+                <h3>Zenith</h3>
+                <p>$5.000 CAD</p>
+                <button>Add to Cart</button>
+            </li>
+            <li>
+                <img src="img/TudorBlackBay.png" class="img-Hover" alt="Zenith">
+                <h3>Tudor</h3>
+                <p>$4.340 CAD</p>
+                <button>Add to Cart</button>
+            </li>
+            <li>
+                <img src="img/Panerai.png" class="img-Hover" alt="Zenith">
+                <h3>Panerai</h3>
+                <p>$8.860 CAD</p>
+                <button>Add to Cart</button>
+            </li>
+            <li>
+                <img src="img/A.Lange&Sohne.png" class="img-Hover" alt="Zenith">
+                <h3>A. Lange & Söhne</h3>
+                <p>$53.824 CAD</p>
+                <button>Add to Cart</button>
+            </li>
+        </ul>
+
+    </section>
+    <div class="menu">
+        <ul>
+            <li><a href="newIndex.html">Home</a></li>
+            <li><a href="#">Products</a></li>
+            <li><a href="newAbout.html">About</a></li>
+            <li><a href="newContact.html">Contact</a></li>
+        </ul>
+    </div>
+
+    <script>
+        const menuToggle = document.querySelector('.toggle')
+        const showCase = document.querySelector('.showcase')
+
+        menuToggle.addEventListener('click', () => {
+            menuToggle.classList.toggle('active')
+            showCase.classList.toggle('active')
+        })
+    </script>
+</body>
+
+</html>

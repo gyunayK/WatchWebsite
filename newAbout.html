@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style2.css"">
+    <link rel=" preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@500&display=swap" rel="stylesheet">
+    <style>
+        .showcase video{
+            opacity: 0.3;
+        }
+
+
+        h2 {
+            font-family: 'Dancing Script', cursive;
+            text-align: center;
+        }
+
+        p {
+            font-size: 25px;
+        }
+
+        #about {
+            border-radius: 20px;
+            padding-top: 1px;
+            padding-left: 20px;
+            padding-right: 20px;
+            width: 100%;
+            text-align: left;
+            z-index: 14;
+        }
+
+
+        /* Desktop */
+        @media (min-width: 980px) {
+            #about {
+                padding-top: 10px;
+                padding-left: 10%;
+                padding-right: 10%;
+            }
+        }
+
+        /* Ipad */
+        @media (min-width: 601px) and (max-width: 979px) {
+            #about {
+                padding-left: 10%;
+                padding-right: 10%;
+            }
+
+            #about h2 {
+                padding-top: 30px;
+            }
+
+            #about p {
+                padding-top: 10px;
+            }
+        }
+
+        /* Phone */
+        @media (max-width: 600px) {
+            #about {
+                padding-left: 10%;
+                padding-right: 10%;
+            }
+
+            #about h2 {
+                padding-top: 30px;
+            }
+
+            #about p {
+                padding-top: 10px;
+            }
+        }
+    </style>
+    <title>Watches and Wonders</title>
+</head>
+
+<body>
+    <section class=" showcase active">
+        <header>
+            <h2 class="logo">Watches and Wonders</h2>
+            <div class="toggle active"></div>
+        </header>
+        <video src="video/ Movie.mp4" muted loop autoplay></video>
+        <div class="overlay"></div>
+        <div class="text">
+
+        </div>
+        <div id="about">
+            <h2>About</h2>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Assumenda cupiditate harum saepe reiciendis
+                ducimus sequi in autem, ratione minus. Incidunt aliquid delectus, quis adipisci nemo maxime nulla
+                architecto iure nam!
+                Cumque neque vitae voluptates dicta numquam repellendus, odio totam nesciunt, repellat suscipit quo
+                quidem debitis! Iste ipsam non maxime impedit, numquam culpa iusto qui magnam porro placeat sit, ad
+                dolore.
+                Aperiam cumque ab dignissimos obcaecati quis provident iste et totam similique modi aliquid nostrum
+                numquam sed, sit sint optio animi ad itaque repudiandae eligendi odio. Voluptas itaque debitis
+                voluptatem aut?
+                Saepe, voluptates eveniet accusantium magni optio quo, ab, asperiores possimus commodi aut ad animi
+                deserunt praesentium non. Sint ipsum aliquid velit amet obcaecati tenetur asperiores, dolore ea ipsam,
+                nisi provident?
+                Amet possimus harum ad pariatur, suscipit ex. Iure placeat deleniti fugit perspiciatis aliquam
+                repellendus possimus, error suscipit et recusandae optio odit esse. Sit deserunt nulla, iure numquam
+                tempore nihil commodi.
+                Quos hic cum qui assumenda ratione eaque dolorum voluptas unde recusandae cupiditate eveniet explicabo
+                ex non aperiam esse ipsa maxime, corrupti beatae nesciunt eius amet. Totam tenetur facere similique
+                consequatur.
+                Optio inventore repudiandae voluptas provident assumenda possimus quod nam nisi quo vel culpa vitae
+                deleniti quis excepturi voluptatum, nobis a quae aliquam esse sit! Dicta qui provident aspernatur in
+                harum.
+                Porro sit tempora sed id sapiente. Ex assumenda omnis, consectetur et blanditiis quam mollitia
+                doloremque. Repellendus velit veniam voluptas dolore quam impedit inventore incidunt eligendi nulla
+                sapiente? Repudiandae, distinctio placeat.
+                Unde facere architecto adipisci ex ad ullam aut nesciunt voluptas sed tenetur maiores, iure quaerat a
+                quam, recusandae repellendus perferendis fuga culpa autem excepturi error veniam voluptatibus esse.
+                Quod, architecto.
+            </p>
+
+    </section>
+    <div class="menu">
+        <ul>
+            <li><a href="newIndex.html">Home</a></li>
+            <li><a href="newProduct.html">Products</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="newContact.html">Contact</a></li>
+        </ul>
+    </div>
+
+    <script>
+        const menuToggle = document.querySelector('.toggle')
+        const showCase = document.querySelector('.showcase')
+
+        menuToggle.addEventListener('click', () => {
+            menuToggle.classList.toggle('active')
+            showCase.classList.toggle('active')
+        })
+    </script>
+</body>
+
+</html>

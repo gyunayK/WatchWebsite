@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style2.css"">
+    <link rel=" preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@500&display=swap" rel="stylesheet">
+    <style>
+         .showcase video{
+            opacity: 0.3;
+        }
+
+        main {
+            z-index: 25;
+        }
+
+        h2 {
+            font-family: 'Dancing Script';
+            text-align: center;
+        }
+
+        form {
+            font-family: 'Dancing Script';
+        }
+
+        textarea,
+        input {
+            font-family: 'Dancing Script';
+        }
+    </style>
+    <title>Watches and Wonders</title>
+</head>
+
+<body>
+    <section class=" showcase active">
+        <header>
+            <h2 class="logo">Watches and Wonders</h2>
+            <div class="toggle active"></div>
+        </header>
+        <video src="video/ Movie.mp4" muted loop autoplay></video>
+        <div class="overlay"></div>
+        <br>
+        <main id="mainForm">
+            <h2>Contact Form</h2>
+            <form>
+                <label for="name">Name:</label><br>
+                <input type="text" id="name" name="name" placeholder="Full Name"><br>
+                <label for="email">Email:</label><br>
+                <input type="text" id="email" name="email" placeholder="Email"><br>
+                <label for="message">Message:</label><br>
+                <textarea id="message" name="message" rows="5" cols="30" placeholder="Message"></textarea><br>
+                <input type="submit" value="Submit">
+            </form>
+
+        </main>
+
+        <ul class="social">
+            <li><a href="https://www.instagram.com/synarodin/"> <img src="img/instagram.png" alt="insta"></a></li>
+            <li><a href="https://github.com/OdinOfRivia"><img src="img/github.png" alt="github"></a></li>
+        </ul>
+    </section>
+    <div class="menu">
+        <ul>
+            <li><a href="newIndex.html">Home</a></li>
+            <li><a href="newProduct.html">Products</a></li>
+            <li><a href="newAbout.html">About</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+    </div>
+
+    <script>
+        const menuToggle = document.querySelector('.toggle')
+        const showCase = document.querySelector('.showcase')
+
+        menuToggle.addEventListener('click', () => {
+            menuToggle.classList.toggle('active')
+            showCase.classList.toggle('active')
+        })
+    </script>
+</body>
+
+</html>

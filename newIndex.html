@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style2.css"">
+    <link rel=" preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@500&display=swap" rel="stylesheet">
+    <title>Watches and Wonders</title>
+</head>
+
+<body>
+    <section class=" showcase active">
+        <header>
+            <h2 class="logo">Watches and Wonders</h2>
+            <div class="toggle active"></div>
+        </header>
+        <video src="video/ Movie.mp4" muted loop autoplay></video>
+        <div class="overlay"></div>
+        <div class="text">
+            <h2>Never Settle</h2>
+            <h3>Watch Finder</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis porro molestias quasi. Quam vel
+                quibusdam
+                optio sunt in esse. Sint, eligendi at molestias cum illum nostrum cupiditate natus perspiciatis dolorem?
+            </p>
+            <a href="newProduct.html">Explore</a>
+        </div>
+
+        <ul class="social">
+            <li><a href="https://www.instagram.com/synarodin/"> <img src="img/instagram.png" alt="insta"></a></li>
+            <li><a href="https://github.com/OdinOfRivia"><img src="img/github.png" alt="github"></a></li>
+        </ul>
+    </section>
+    <div class="menu">
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="newProduct.html">Products</a></li>
+            <li><a href="newAbout.html">About</a></li>
+            <li><a href="newContact.html">Contact</a></li>
+        </ul>
+    </div>
+
+    <script>
+        const menuToggle = document.querySelector('.toggle')
+        const showCase = document.querySelector('.showcase')
+
+        menuToggle.addEventListener('click', () => {
+            menuToggle.classList.toggle('active')
+            showCase.classList.toggle('active')
+        })
+    </script>
+</body>
+
+</html>
